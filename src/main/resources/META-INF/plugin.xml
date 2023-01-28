@@ -27,4 +27,10 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+    <actions>
+        <action id="SimpleAction" class="com.wortin.wortinintellijplugindemo.SimpleAction" text="SimpleAction"
+                description="SimpleAction">
+            <add-to-group group-id="RunContextGroup" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
