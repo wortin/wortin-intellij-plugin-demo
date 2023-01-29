@@ -42,6 +42,10 @@ tasks {
         token.set(System.getenv("PUBLISH_TOKEN"))
     }
 
+    publishPlugin {
+        channels.set(listOf("alpha"))
+    }
+
     // 禁用构建可搜索选项，可以避免在运行开发实例时，重新构建后，提示只能运行一个实例的错误
     // 沙盒IDE实例在调试器下运行时，热加载不起作用
     buildSearchableOptions {
